@@ -1,12 +1,28 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <div id="main" fxLayout="row" fxLayoutAlign="center center">
   <div class="content" fxLayout="row">
     <div class="main-image" fxFlex="45%"></div>
     <div fxFlex="55%" fxLayout="column" fxLayoutAlign="space-between  stretch">
-      <div fxLayout="row" fxLayoutAlign="space-between center">
+      <div class="navigation" fxLayout="row" fxLayoutAlign="space-between center">
         <a routerLink="sign-up" routerLinkActive="active-route">Sign Up</a>
         <a routerLink="sign-in" routerLinkActive="active-route">Sign In</a>
       </div>
       <router-outlet></router-outlet>
+      <div class="ikonki" fxLayout="row" fxLayoutAlign="space-around center">
+        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
+            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-instagram"></i></div>
+            <span>Instagram</span>
+        </a>
+        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
+            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-youtube"></i></div>
+            <span>YouTube</span>
+        </a>
+        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
+            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-twitter"></i></div>
+            <span>Twitter</span>
+        </a>
+      </div>
     </div>
   </div>
 </div>
