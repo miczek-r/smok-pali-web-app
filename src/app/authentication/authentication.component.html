@@ -1,0 +1,12 @@
+<div id="main" fxLayout="row" fxLayoutAlign="center center">
+  <div class="content" fxLayout="row">
+    <div class="main-image" fxFlex="45%"></div>
+    <div fxFlex="55%" fxLayout="column" fxLayoutAlign="space-between  stretch">
+      <div fxLayout="row" fxLayoutAlign="space-between center">
+        <a routerLink="sign-up" routerLinkActive="active-route">Sign Up</a>
+        <a routerLink="sign-in" routerLinkActive="active-route">Sign In</a>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+#main{
+  background-color: #1a1b26;
+  width:100vw;
+  height:100vh;
+}
+
+.content{
+  max-width:1200px;
+  width: 100%;
+  margin-inline: 2rem;
+  max-height: 650px;
+  height: 100%;
+  background-color: green;
+
+  & > div {
+    height: 100%;
+  }
+
+  .main-image{
+    background: linear-gradient(45deg, #5e4ec7 30%, #37cfd2);
+  }
+
+  & > div:not(.main-image){
+    background-color: #202226;
+    padding-inline: 8rem;
+    padding-block: 7rem;
+
+    a{
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      position:relative;
+      z-index: 1;
+      opacity: 1;
+      transition: opacity .3s ease-in-out;
+      &.active-route{
+        &::before{
+          transform: scaleX(1) skew(-20deg);
+        }
+      }
+      &:not(.active-route){
+        opacity: 0.3;
+      }
+      &::before{
+          position: absolute;
+          content: '';
+          height: 8px;
+          width: 100%;
+          background-color: #48e0ca;
+          bottom: 3px;
+          z-index: -1;
+          border-radius: 3px;
+          transform:  scaleX(0);
+          transform-origin: left;
+          transition: transform .3s ease-in-out;
+      }
+    }
+  }
+}
