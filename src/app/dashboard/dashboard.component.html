@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div id="navbar" fxLayout="row">
+    <div fxFlex="30%" fxLayoutAlign="start center" fxLayoutGap="200px">
+        <a>godzina</a>
+        <a>ikonka1 ikonka2 ikonka3</a>
+    </div>
+
+    <div class="Logo" fxFlex="40%" fxLayoutAlign="center center">
+        <a href="/dashboard">zarabiste logo gierki na pol ekranu</a>
+    </div>
+
+    <div fxLayoutAlign="end center" fxFlex="30%" fxLayoutGap="60px">
+        <a>Monety</a>
+        <a>Grzybki</a>
+        <a>poziom gracza</a>
+        <a>Nick</a>
+        <a>Avatar</a>
+    </div>
+</div>
+
+<div id="leftMenu" fxLayout="column" fxLayoutAlign="space-around space-between" fxLayoutGap="10px">
+
+    <a *ngFor="let icon of menuIcons;" href="#">
+        <div class="icon" fxLayoutAlign="center center"><i class="fa {{icon.faClass}}"></i></div>
+    </a>
+
+</div>
+
+<div id="rightMenu"></div>
+
+<div id="main">
+    <div class="a"></div>
+    <div class="c"></div>
+    <div class="b"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+</div>
+
+<div id="licenseBar"></div>

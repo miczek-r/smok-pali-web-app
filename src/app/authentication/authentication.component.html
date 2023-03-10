@@ -10,17 +10,9 @@
       </div>
       <router-outlet></router-outlet>
       <div class="ikonki" fxLayout="row" fxLayoutAlign="space-around center">
-        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
-            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-instagram"></i></div>
-            <span>Instagram</span>
-        </a>
-        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
-            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-youtube"></i></div>
-            <span>YouTube</span>
-        </a>
-        <a href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
-            <div class="icon" fxLayoutAlign="center center"><i class="fa fa-twitter"></i></div>
-            <span>Twitter</span>
+        <a *ngFor="let icon of icons;" href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
+            <div class="icon" fxLayoutAlign="center center"><i class="fa {{icon.faClass}}"></i></div>
+            <span>{{icon.text}}</span>
         </a>
       </div>
     </div>
