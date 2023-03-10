@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div id="main" fxLayout="row" fxLayoutAlign="center center">
   <div class="content" fxLayout="row">
@@ -10,9 +9,9 @@
       </div>
       <router-outlet></router-outlet>
       <div class="ikonki" fxLayout="row" fxLayoutAlign="space-around center">
-        <a *ngFor="let icon of icons;" href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
+        <a *ngFor="let icon of icons" href="#" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="3px">
             <div class="icon" fxLayoutAlign="center center"><i class="fa {{icon.faClass}}"></i></div>
-            <span>{{icon.text}}</span>
+            <div>{{icon.text}}</div>
         </a>
       </div>
     </div>

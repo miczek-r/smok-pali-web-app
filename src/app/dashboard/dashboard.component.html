@@ -1,40 +1,39 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<div id="navbar" fxLayout="row">
-    <div fxFlex="30%" fxLayoutAlign="start center" fxLayoutGap="200px">
+<div fxLayout="column" fxLayoutGap="1rem">
+<nav id="navbar" fxLayout="row">
+    <div fxFlex fxLayoutAlign="start center" fxLayoutGap="200px">
         <a>godzina</a>
         <a>ikonka1 ikonka2 ikonka3</a>
     </div>
 
-    <div class="Logo" fxFlex="40%" fxLayoutAlign="center center">
+    <div class="Logo" fxLayoutAlign="center center">
         <a href="/dashboard">zarabiste logo gierki na pol ekranu</a>
     </div>
 
-    <div fxLayoutAlign="end center" fxFlex="30%" fxLayoutGap="60px">
+    <div fxLayoutAlign="end center" fxFlex fxLayoutGap="60px">
         <a>Monety</a>
         <a>Grzybki</a>
         <a>poziom gracza</a>
         <a>Nick</a>
         <a>Avatar</a>
     </div>
-</div>
+</nav>
 
-<div id="leftMenu" fxLayout="column" fxLayoutAlign="space-around space-between" fxLayoutGap="10px">
+<div fxFlex fxLayout="row" fxLayoutGap="1rem" class="main-content">
+  <div id="leftMenu" fxLayout="column" fxLayoutAlign="space-around center">
+      <a *ngFor="let icon of menuIcons" href="#">
+          <div class="icon" fxLayoutAlign="center center"><i class="fa {{icon.faClass}}"></i></div>
+      </a>
 
-    <a *ngFor="let icon of menuIcons;" href="#">
-        <div class="icon" fxLayoutAlign="center center"><i class="fa {{icon.faClass}}"></i></div>
-    </a>
-
-</div>
-
-<div id="rightMenu"></div>
-
-<div id="main">
-    <div class="a"></div>
-    <div class="c"></div>
-    <div class="b"></div>
-    <div class="d"></div>
-    <div class="e"></div>
+  </div>
+  <div fxFlex id="main">
+      <div class="a"></div>
+      <div class="c"></div>
+      <div class="b"></div>
+      <div class="d"></div>
+      <div class="e"></div>
+  </div>
+  <div id="rightMenu"></div>
 </div>
 
 <div id="licenseBar"></div>
+</div>

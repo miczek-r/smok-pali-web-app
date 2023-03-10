@@ -1,7 +1,10 @@
+:host > div {
+  height: 100vh;
+}
+
 #navbar {
     background-color: chartreuse;
     min-height: 100px;
-    margin-bottom: 30px;
 
     div {
         margin-inline: 50px;
@@ -10,35 +13,25 @@
 
 #leftMenu {
     background-color: indigo;
-    height: 80%;
     width: 100px;
-    float: left;
 }
 
 #rightMenu {
     background-color: rgb(168, 182, 44);
-    height: 80%;
     width: 100px;
-    float: right;
-
 }
 
 #main {
     background-color: aqua;
-    margin-inline: 150px;
-
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 20px;
-    height: 80%;
-
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1rem;
 }
 
 #licenseBar {
     background-color: rgb(141, 21, 165);
     min-height: 50px;
-    margin-top: 20px;
 }
 
 .Logo{
