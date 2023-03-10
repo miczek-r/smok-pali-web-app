@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./authentication.component.scss']
 })
 export class AuthenticationComponent {
+  icons: AuthIcon[] = [
+    {
+      text: "Instagram",
+      faClass: "fa-instagram"
+    },
+    {
+      text: "YouTube",
+      faClass: "fa-youtube"
+    },
+    {
+      text: "Twitter",
+      faClass: "fa-twitter"
+    }
+  ];
 
+}
+
+interface AuthIcon{
+  text: string;
+  faClass: string;
 }

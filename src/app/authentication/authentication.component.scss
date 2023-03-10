@@ -4,6 +4,8 @@
   height:100vh;
 }
 
+
+
 .content{
   max-width:1200px;
   width: 100%;
@@ -25,7 +27,7 @@
     padding-inline: 8rem;
     padding-block: 7rem;
 
-    a{
+    .navigation a{
       font-size: 2rem;
       font-weight: bold;
       color: white;
@@ -55,6 +57,20 @@
           transform-origin: left;
           transition: transform .3s ease-in-out;
       }
+
+      
     }
+  }
+  .ikonki{
+    padding-inline: 5rem;
+    color: whitesmoke;
+  }
+  .icon{
+    height: 50px;
+    width: 50px;
+    font-size: 25px !important;
+    border-radius: 50px;
+    background-color: rgb(58, 62, 69);
+    overflow: visible;
   }
 }
