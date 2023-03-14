@@ -1,0 +1,13 @@
+<div fxLayout="row">
+  <div [class.hidden]="!chatWithUser" class="chat">
+<div>{{chatWithUser}} huj</div>
+<div class="received">Siemka misi kolorwy</div>
+<div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+  </div>
+  <div class="friends" fxLayout="column" fxLayoutGap="1rem" >
+    <div class="user-icon" [class.active]="chatWithUser == user.userName" *ngFor="let user of users" (click)="chatWithUser = chatWithUser==user.userName?null:user.userName">
+     <img [src]="user.image" />
+    </div>
+  <div (click)="test()">Test</div>
+  </div>
+</div>
