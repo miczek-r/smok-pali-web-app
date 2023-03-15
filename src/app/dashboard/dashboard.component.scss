@@ -3,6 +3,9 @@
   background-image: url(https://c4.wallpaperflare.com/wallpaper/272/886/439/dunes-desert-clear-sky-minimalism-windows-logo-hd-wallpaper-preview.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
+  & > * {
+    min-height: 0;
+  }
 }
 
 #navbar {
