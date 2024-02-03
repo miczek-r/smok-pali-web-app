@@ -1,0 +1,38 @@
+<div fxLayout="row">
+  <div [class.hidden]="!chatWithUser" fxLayout="column" class="chat">
+    <div>{{chatWithUser}}</div>
+    <div class="messages" fxLayout="column-reverse">
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+      <div class="received">Siemka misi kolorwy</div>
+      <div class="sent">No co tam kociaczku sadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfassadfasdfasdfasdfasdfas</div>
+    </div>
+    <div class="input">
+      <textarea placeholder="Type ..."></textarea>
+    </div>
+  </div>
+  <div class="friends" fxLayout="column" fxLayoutGap="1rem" >
+    <div class="user-icon" [class.active]="chatWithUser == user.userName" *ngFor="let user of users" (click)="chatWithUser = chatWithUser==user.userName?null:user.userName">
+     <img [src]="user.image" />
+    </div>
+  <div (click)="test()">Test</div>
+  </div>
+</div>

@@ -1,0 +1,120 @@
+.user-icon{
+ width: 50px;
+ aspect-ratio: 1;
+ background: linear-gradient(45deg, #333, #AAA);
+ border-radius: 50%;
+ overflow: hidden;
+ outline: 1px rgba(255,255,255,0.7) solid;
+ transition: all 0.3s ease-in-out;
+ & img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+ }
+ &.active {
+  outline: 1px rgba(100,255,100,0.7) solid;
+  transform: scale(1.1);
+ }
+}
+
+div:has(.friends) {
+  position:relative;
+  height: 100%;
+  min-width: 76px;
+}
+
+.friends {
+  right: 0;
+  position: absolute;
+  background: linear-gradient(rgba(55,55,55,0.7), rgba(188,188,188,0.6));
+  border-radius: 30px 0px 0px 30px ;
+  padding: 0.75rem;
+  height: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.chat {
+  &:before{
+    content: '';
+    position: absolute;
+    z-index: 100;
+    top: 4rem;
+    left: 0;
+    bottom: 4rem;
+    right: 0;
+    box-shadow: inset 0px 50px 18px -10px rgb(205,230,255), inset 0px -50px 18px -10px rgb(255,255,255);
+    pointer-events: none;
+  }
+  background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.6));
+  backdrop-filter: blur(10px);
+  border-radius: 30px 0px 0px 30px ;
+  width: 400px;
+  height: 100%;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+  padding: 1rem;
+  padding-right: calc(1rem + 74px);
+  &.hidden {
+    opacity: 0;
+    width: 0px;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+  &>div:first-child {
+    text-align: center;
+    font-size: x-large;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .received, .sent{
+    min-width: 270px;
+    width: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    white-space: pre-wrap
+
+  }
+  .received{
+    margin-right: 1.5rem;
+    text-align: start;
+    background: linear-gradient(rgba(255,255,255,1) 50%, rgba(255,255,255,0.6));
+  }
+  .sent{
+    margin-left: 1.5rem;
+    color: white;
+    background: rgba(41,101,230,1) ;
+  }
+
+}
+
+.input{
+  background-color: rgba(130,130,130, 0.8);
+  border-radius: 1rem;
+  align-self: end;
+  bottom: 0;
+  z-index: 101;
+  padding: 1rem;
+  width: 100%;
+  textarea {
+    width: 100%;
+    padding-bottom: 0.5rem;
+    background-color: transparent;
+    border: none;
+    resize: none;
+    &:focus-visible{
+      outline: none;
+    }
+  }
+}
+
+.messages{
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  border-radius: 1rem;
+}

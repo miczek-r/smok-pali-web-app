@@ -1,0 +1,65 @@
+:host > div {
+  height: 100vh;
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/272/886/439/dunes-desert-clear-sky-minimalism-windows-logo-hd-wallpaper-preview.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  & > * {
+    min-height: 0;
+  }
+}
+
+#navbar {
+    background-color: chartreuse;
+    min-height: 100px;
+
+    div {
+        margin-inline: 50px;
+    }
+}
+
+#leftMenu {
+    background-color: indigo;
+    width: 100px;
+}
+
+
+#main {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+#licenseBar {
+    background-color: rgb(141, 21, 165);
+    min-height: 50px;
+}
+
+.Logo{
+    font-size: 25px !important;
+    background-color: rgb(58, 62, 69);
+}
+
+.a {
+    grid-row: span 2;
+    background-color: black;
+}
+
+.b {
+    grid-row: span 3;
+    background-color: cadetblue;
+}
+
+.c {
+    background-color: darkmagenta;
+}
+
+.d {
+    background-color: darkblue;
+}
+
+.e {
+    grid-column: span 2;
+    background-color: green;
+}
